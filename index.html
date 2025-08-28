@@ -1,121 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laura & Camilo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boda Nuria & Pablo</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
       font-family: 'Patrick Hand', cursive;
-      color: #000;
-      overflow-x: hidden;
     }
 
-    .section {
-      padding: 80px 20px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      text-align: left;
-      min-height: 100vh;
+    section {
+      width: 100%;
+      overflow: hidden;
     }
 
-    .section .text {
-      flex: 1 1 300px;
-      padding: 20px;
-    }
-
-    .section .image {
-      flex: 1 1 300px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin: 10px 0;
-    }
-
-    p {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-    }
-
-    .hero-img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    img {
-      max-width: 100%;
+    section img {
+      width: 100%;
       height: auto;
       display: block;
     }
 
-    @media (max-width: 768px) {
-  .section {
-    flex-direction: column;
-    text-align: center;
-    padding: 60px 15px;
-    background-size: cover;
-    background-position: top center;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
-
-  .section .text, .section .image {
-    flex: 1 1 100%;
-    padding: 10px;
-  }
-}
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      p {
-        font-size: 1.2rem;
-      }
-
-      .section .text, .section .image {
-        flex: 1 1 100%;
-        padding: 10px;
-      }
+    footer {
+      width: 100%;
+      height: 50px;
+      background-color: black;
     }
   </style>
 </head>
 <body>
-  <section class="section" style="background-image: url('assets/fondo-1.webp');">
-    <div class="text">
-      <p>Queremos compartir contigo el día<br>más feliz de nuestras vidas</p>
-      <h1>NURIA & PABLO</h1>
-    </div>
-    <div class="image">
-      <img src="assets/encabezado.jpeg" alt="Laura y Camilo" class="hero-img">
-    </div>
+
+  <!-- Fondo 1 -->
+  <section>
+    <img src="assets/fondo-1.webp" alt="Fondo 1" />
   </section>
 
-  <section class="section" style="background-image: url('assets/fondo2.webp');"></section>
-  <section class="section" style="background-image: url('assets/fondo3.webp');"></section>
-  <section class="section" style="background-image: url('assets/fondo4.webp');"></section>
-  <section class="section" style="background-image: url('assets/fondo5.webp');"></section>
-  <section class="section" style="background-image: url('assets/fondo6.webp');"></section>
-  <section class="section" style="background-image: url('assets/fondo7.webp');"></section>
-  <section class="section" style="background-image: url('assets/fondo8.webp');"></section>
-    <footer style="background-color: #000; height: 38px; width: 100%;"></footer>
+  <!-- Fondo 2 -->
+  <section>
+    <img src="assets/fondo2.webp" alt="Fondo 2" />
+  </section>
+
+  <!-- Fondo 3 -->
+  <section>
+    <img src="assets/fondo3.webp" alt="Fondo 3" />
+  </section>
+
+  <!-- Fondo 4 -->
+  <section>
+    <img src="assets/fondo4.webp" alt="Fondo 4" />
+  </section>
+
+  <!-- Fondo 5 -->
+  <section>
+    <img src="assets/fondo5.webp" alt="Fondo 5" />
+  </section>
+
+  <!-- Fondo 6 -->
+  <section>
+    <img src="assets/fondo6.webp" alt="Fondo 6" />
+  </section>
+
+  <!-- Fondo 7 -->
+  <section>
+    <img src="assets/fondo7.webp" alt="Fondo 7" />
+  </section>
+
+  <!-- Fondo 8 -->
+  <section>
+    <img src="assets/fondo8.webp" alt="Fondo 8" />
+  </section>
+
+  <!-- Franja negra final -->
+  <footer></footer>
+
 </body>
 </html>
-
