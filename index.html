@@ -9,49 +9,60 @@
     body {
       margin: 0;
       font-family: 'Patrick Hand', cursive;
-      background: url('fondo-1.webp') no-repeat center center fixed;
-      background-size: cover;
       color: #000;
       overflow-x: hidden;
     }
+
     .section {
       padding: 80px 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       text-align: left;
+      min-height: 100vh;
     }
+
     .section .text {
       flex: 1 1 300px;
       padding: 20px;
     }
+
     .section .image {
       flex: 1 1 300px;
       text-align: center;
     }
+
     h1 {
       font-size: 3rem;
       margin: 10px 0;
     }
+
     p {
       font-size: 1.5rem;
       margin-bottom: 20px;
     }
+
     .hero-img {
       max-width: 100%;
       height: auto;
       border-radius: 10px;
     }
+
     @media (max-width: 768px) {
       .section {
         flex-direction: column;
         text-align: center;
       }
+
       h1 {
         font-size: 2.2rem;
       }
+
       p {
         font-size: 1.2rem;
       }
@@ -59,14 +70,22 @@
   </style>
 </head>
 <body>
-  <section class="section">
+  <section class="section" style="background-image: url('assets/fondo-1.webp');">
     <div class="text">
       <p>Queremos compartir contigo el día<br>más feliz de nuestras vidas</p>
       <h1>LAURA & CAMILO</h1>
     </div>
     <div class="image">
-      <img src="encabezado.jpeg" alt="Laura y Camilo" class="hero-img">
+      <img src="assets/encabezado.jpeg" alt="Laura y Camilo" class="hero-img">
     </div>
   </section>
+
+  <section class="section" style="background-image: url('assets/fondo2.webp');"></section>
+  <section class="section" style="background-image: url('assets/fondo3.webp');"></section>
+  <section class="section" style="background-image: url('assets/fondo4.webp');"></section>
+  <section class="section" style="background-image: url('assets/fondo5.webp');"></section>
+  <section class="section" style="background-image: url('assets/fondo6.webp');"></section>
+  <section class="section" style="background-image: url('assets/fondo7.webp');"></section>
+  <section class="section" style="background-image: url('assets/fondo8.webp');"></section>
 </body>
 </html>
