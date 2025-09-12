@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Boda de Nuria y Pablo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet" />
+
   <style>
     * {
       margin: 0;
@@ -24,49 +26,71 @@
     }
 
     section img {
-      display: block;
       width: 100%;
       height: auto;
+      display: block;
     }
 
-    .fondo8 {
+    /* Fondo 8 con posicionamiento responsivo */
+    .fondo-8 {
       position: relative;
+      width: 100%;
       text-align: center;
+      background-color: #f9f5ef;
+      padding: 3rem 1rem;
+      overflow: hidden;
     }
 
-    .fondo8 img.coche {
-      width: 50%;
-      max-width: 300px;
+    .fondo-8 .bg-fondo {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .contenido-centro {
+      position: relative;
       z-index: 1;
     }
 
-    .fondo8 p {
-      position: absolute;
-      top: 75%;
-      left: 50%;
-      transform: translate(-50%, 0); top: calc(50% + 160px);
-      font-family: 'Style Script', cursive; font-weight: 600;
+    .coche-img {
+      width: 70%;
+      max-width: 300px;
+      height: auto;
+    }
+
+    .mensaje-final {
+      font-family: 'Style Script', cursive;
       font-size: 2.6rem;
+      font-weight: bold;
       color: #000;
-      z-index: 2;
+      margin-top: 1rem;
     }
 
     @media (max-width: 768px) {
-      .fondo8 img.coche {
-        width: 70%;
+      .coche-img {
+        width: 80%;
       }
-      .fondo8 p {
+
+      .mensaje-final {
         font-size: 2rem;
       }
+    }
+
+    footer {
+      width: 100%;
+      height: 50px;
+      background-color: #000;
     }
   </style>
 </head>
 
 <body>
+
+  <!-- Fondos 1 a 7 -->
   <section><img src="assets/fondo-1.webp" alt="Fondo 1" /></section>
   <section><img src="assets/fondo2.webp" alt="Fondo 2" /></section>
   <section><img src="assets/fondo3.webp" alt="Fondo 3" /></section>
@@ -74,10 +98,18 @@
   <section><img src="assets/fondo5.webp" alt="Fondo 5" /></section>
   <section><img src="assets/fondo6.webp" alt="Fondo 6" /></section>
   <section><img src="assets/fondo7.webp" alt="Fondo 7" /></section>
-  <section class="fondo8">
-    <img src="assets/fondo8.webp" alt="Fondo 8" />
-    <img src="assets/coche.svg" alt="Coche" class="coche" />
-    <p>¡TE ESPERAMOS!</p>
-  <section>
 
-</html> 
+  <!-- Fondo 8 con coche y mensaje -->
+  <section class="fondo-8">
+    <img src="assets/fondo8.webp" alt="Fondo 8" class="bg-fondo" />
+    <div class="contenido-centro">
+      <img src="assets/coche.svg" alt="Coche de boda" class="coche-img" />
+      <h2 class="mensaje-final">¡TE ESPERAMOS!</h2>
+    </div>
+  </section>
+
+  <!-- Franja negra final -->
+  <footer></footer>
+
+</body>
+</html>
