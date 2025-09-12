@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boda Nuria & Pablo</title>
+  <title>Boda de Nuria y Pablo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -12,72 +14,72 @@
     }
 
     body {
-      background-color: black;
-      font-family: 'Patrick Hand', cursive;
+      background-color: #000;
+      font-family: sans-serif;
     }
 
     section {
       width: 100%;
-      overflow: hidden;
+      position: relative;
     }
 
     section img {
+      display: block;
       width: 100%;
       height: auto;
-      display: block;
     }
 
-    footer {
-      width: 100%;
-      height: 50px;
-      background-color: black;
+    .fondo8 {
+      position: relative;
+      text-align: center;
+    }
+
+    .fondo8 img.coche {
+      width: 40%;
+      max-width: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .fondo8 p {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      color: #000;
+      z-index: 2;
+    }
+
+    @media (max-width: 768px) {
+      .fondo8 img.coche {
+        width: 60%;
+      }
+      .fondo8 p {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
+
 <body>
-
-  <!-- Fondo 1 -->
-  <section>
-    <img src="assets/fondo-1.webp" alt="Fondo 1" />
-  </section>
-
-  <!-- Fondo 2 -->
-  <section>
-    <img src="assets/fondo2.webp" alt="Fondo 2" />
-  </section>
-
-  <!-- Fondo 3 -->
-  <section>
-    <img src="assets/fondo3.webp" alt="Fondo 3" />
-  </section>
-
-  <!-- Fondo 4 -->
-  <section>
-    <img src="assets/fondo4.webp" alt="Fondo 4" />
-  </section>
-
-  <!-- Fondo 5 -->
-  <section>
-    <img src="assets/fondo5.webp" alt="Fondo 5" />
-  </section>
-
-  <!-- Fondo 6 -->
-  <section>
-    <img src="assets/fondo6.webp" alt="Fondo 6" />
-  </section>
-
-  <!-- Fondo 7 -->
-  <section>
-    <img src="assets/fondo7.webp" alt="Fondo 7" />
-  </section>
-
-  <!-- Fondo 8 -->
-  <section>
+  <section><img src="assets/fondo-1.webp" alt="Fondo 1" /></section>
+  <section><img src="assets/fondo2.webp" alt="Fondo 2" /></section>
+  <section><img src="assets/fondo3.webp" alt="Fondo 3" /></section>
+  <section><img src="assets/fondo4.webp" alt="Fondo 4" /></section>
+  <section><img src="assets/fondo5.webp" alt="Fondo 5" /></section>
+  <section><img src="assets/fondo6.webp" alt="Fondo 6" /></section>
+  <section><img src="assets/fondo7.webp" alt="Fondo 7" /></section>
+  <section class="fondo8">
     <img src="assets/fondo8.webp" alt="Fondo 8" />
+    <img src="assets/coche.webp" alt="Coche" class="coche" />
+    <p>¡TE ESPERAMOS!</p>
   </section>
-
-  <!-- Franja negra final -->
-  <footer></footer>
-
+  <section><img src="assets/franja-negra.png" alt="Franja negra" /></section>
 </body>
+
 </html>
