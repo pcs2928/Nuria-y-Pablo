@@ -19,27 +19,27 @@
 
     section {
       width: 100%;
-      position: relative;
       overflow: hidden;
     }
 
-    /* Fondo 1 personalizado */
+    /* Fondo 1 con borde */
     .fondo1 {
-      background-image: url("assets/fondo-1.webp");
+      background-image: url("assets/fondo-1.webp"); /* fondo con borde */
       background-size: cover;
       background-position: center;
-      padding: 40px 20px;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 40px 20px;
     }
 
     .contenedor-fondo1 {
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 800px;
-      margin: 0 auto;
+      max-width: 900px;
+      width: 100%;
       text-align: center;
       gap: 20px;
     }
@@ -61,7 +61,7 @@
     }
 
     /* Versión escritorio */
-    @media(min-width: 768px) {
+    @media (min-width: 768px) {
       .contenedor-fondo1 {
         gap: 40px;
       }
@@ -69,10 +69,10 @@
         font-size: 1.6rem;
       }
       .nombres {
-        max-width: 60%;
+        max-width: 50%;
       }
       .foto23 {
-        max-width: 70%;
+        max-width: 60%;
       }
     }
 
@@ -86,11 +86,11 @@
 <body>
 
   <!-- Fondo 1 -->
- <section class="fondo1">
+  <section class="fondo1">
     <div class="contenedor-fondo1">
       <p class="texto-fondo1">Queremos compartir contigo el día<br>más feliz de nuestras vidas</p>
-      <img src="assets/nombres.png" alt="Nombres" class="nombres" />
-      <img src="assets/23.jpg" alt="Foto pareja" class="foto23" />
+      <img src="assets/nombres.webp" alt="Nombres" class="nombres" />
+      <img src="assets/23.webp" alt="Foto pareja" class="foto23" />
     </div>
   </section>
 
