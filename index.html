@@ -17,25 +17,29 @@
       font-family: sans-serif;
     }
 
-    body {
-      background-image: url('assets/fondo.webp');
+    .seccion-fondo {
+      width: 100%;
+      min-height: 100vh;
+      background-image: url('assets/fondo.webp'); /* Cambia según tu ruta */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-attachment: scroll; /* Compatible con iOS */
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    .dummy-content {
-      color: transparent;
-      font-size: 1px;
+    .contenido-fondo {
+      visibility: hidden; /* Solo para asegurar renderizado */
     }
   </style>
 </head>
 <body>
-  <div class="dummy-content">.</div>
+
+  <section class="seccion-fondo">
+    <div class="contenido-fondo">.</div>
+  </section>
+
 </body>
 </html>
 
