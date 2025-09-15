@@ -13,17 +13,22 @@
     }
 
     body {
+      font-family: sans-serif;
+    }
+
+    .fondo-unico {
+      width: 100%;
+      height: 100vh;
       background-image: url('assets/fondo.webp');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-attachment: fixed;
-      height: 100vh;
-      font-family: sans-serif;
+      background-attachment: scroll; /* Evita errores en iOS */
     }
   </style>
 </head>
 <body>
 
-</body>
-</html>
+  <section class="fondo-unico">
+    <!-- Aquí puedes
+
