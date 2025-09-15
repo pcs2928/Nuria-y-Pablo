@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -12,33 +12,86 @@
     }
 
     body {
-      background-color: black;
+      background-color: #f8f5ef; /* beige claro */
       font-family: 'Patrick Hand', cursive;
+      color: #000;
     }
 
     section {
       width: 100%;
+      position: relative;
       overflow: hidden;
     }
 
-    section img {
-      width: 100%;
+    /* Fondo 1 personalizado */
+    .fondo1 {
+      background-image: url("assets/fondo-1.webp");
+      background-size: cover;
+      background-position: center;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contenedor-fondo1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      gap: 20px;
+    }
+
+    .texto-fondo1 {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+
+    .nombres {
+      max-width: 80%;
       height: auto;
-      display: block;
+    }
+
+    .foto23 {
+      max-width: 90%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Versión escritorio */
+    @media(min-width: 768px) {
+      .contenedor-fondo1 {
+        gap: 40px;
+      }
+      .texto-fondo1 {
+        font-size: 1.6rem;
+      }
+      .nombres {
+        max-width: 60%;
+      }
+      .foto23 {
+        max-width: 70%;
+      }
     }
 
     footer {
       width: 100%;
       height: 50px;
-      background-color: black;
+      background-color: #000;
     }
   </style>
 </head>
 <body>
 
   <!-- Fondo 1 -->
-  <section>
-    <img src="assets/fondo-1.webp" alt="Fondo 1" />
+ <section class="fondo1">
+    <div class="contenedor-fondo1">
+      <p class="texto-fondo1">Queremos compartir contigo el día<br>más feliz de nuestras vidas</p>
+      <img src="assets/nombres.png" alt="Nombres" class="nombres" />
+      <img src="assets/23.jpg" alt="Foto pareja" class="foto23" />
+    </div>
   </section>
 
   <!-- Fondo 2 -->
