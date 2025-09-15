@@ -6,7 +6,7 @@
   <title>Boda de Nuria y Pablo</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet" />
 
   <style>
     * {
@@ -32,53 +32,52 @@
       display: block;
     }
 
+    /* Estilos específicos para la portada */
     .fondo-1 {
       position: relative;
-      text-align: center;
-      font-family: 'Patrick Hand', cursive;
     }
 
-    .introduccion-texto {
+    .intro-contenido {
       position: absolute;
       top: 10%;
       left: 50%;
       transform: translateX(-50%);
-      color: #000;
-      z-index: 2;
       text-align: center;
-      padding: 0 20px;
+      width: 80%;
+      z-index: 2;
     }
 
-    .introduccion-texto h3 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
+    .mensaje-bienvenida {
+      font-family: 'Caveat', cursive;
+      font-size: 1.8rem;
+      color: #000;
+      margin-bottom: 20px;
       line-height: 1.4;
     }
 
-    .introduccion-texto h1 {
-      font-size: 2.8rem;
-      margin-top: 1rem;
+    .img-nombres {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
     }
 
-    .23 {
-      position: absolute;
-      bottom: 5%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 70%;
+    .img-23 {
+      width: 100%;
       max-width: 350px;
-      z-index: 1;
+      border-radius: 10px;
     }
 
     @media (max-width: 768px) {
-      .introduccion-texto h3 {
-        font-size: 1.2rem;
+      .mensaje-bienvenida {
+        font-size: 1.4rem;
       }
-      .introduccion-texto h1 {
-        font-size: 2.2rem;
+
+      .img-nombres {
+        max-width: 250px;
       }
-      .introduccion-foto {
-        width: 80%;
+
+      .img-23 {
+        max-width: 280px;
       }
     }
 
@@ -89,38 +88,31 @@
     }
   </style>
 </head>
+
 <body>
 
-  <!-- Fondo 1 con introducción -->
+  <!-- Portada con texto + nombres + foto -->
   <section class="fondo fondo-1">
     <img src="assets/fondo-1.webp" alt="Fondo 1" />
-    <div class="introduccion-texto">
-      <h3>Queremos compartir<br>contigo el día más feliz<br>de nuestras vidas</h3>
-      <h1>NURIA &amp; PABLO</h1>
+    <div class="intro-contenido">
+      <p class="mensaje-bienvenida">
+        Queremos compartir <br />
+        contigo el día más feliz <br />
+        de nuestras vidas
+      </p>
+      <img src="assets/nombres.webp" alt="Nombres" class="img-nombres" />
+      <img src="assets/23.jpg" alt="Foto de los novios" class="img-23" />
     </div>
-    <img src="assets/23.jpg" alt="Foto introducción" class="introduccion-foto" />
   </section>
 
-  <!-- Fondos 2 a 7 -->
+  <!-- Puedes seguir aquí con fondo2, fondo3, etc -->
+  <!-- Ejemplo: -->
+  <!--
   <section><img src="assets/fondo2.webp" alt="Fondo 2" /></section>
-  <section><img src="assets/fondo3.webp" alt="Fondo 3" /></section>
-  <section><img src="assets/fondo4.webp" alt="Fondo 4" /></section>
-  <section><img src="assets/fondo5.webp" alt="Fondo 5" /></section>
-  <section><img src="assets/fondo6.webp" alt="Fondo 6" /></section>
-  <section><img src="assets/fondo7.webp" alt="Fondo 7" /></section>
-
-  <!-- Fondo 8 con coche y mensaje superpuesto -->
-  <div class="fondo fondo-8">
-    <img src="assets/fondo8.webp" alt="Fondo 8" />
-    <div class="contenido-sobrepuesto">
-      <img src="assets/coche.svg" alt="Coche de boda" class="coche-img" />
-      <h2 class="mensaje-final">¡TE ESPERAMOS!</h2>
-    </div>
-  </div>
+  -->
 
   <!-- Franja negra al final -->
   <footer></footer>
 
 </body>
 </html>
-
